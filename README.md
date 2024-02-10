@@ -9,7 +9,6 @@ Digital is an easy-to-use digital logic designer and circuit simulator designed 
 
 ![screnshot](distribution/screenshot.png)
 
-![screnshot2](distribution/screenshot2.png)
 
 ## [Download](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip) and Installation ##
 
@@ -253,7 +252,7 @@ If you want to build Digital from the source code:
 
 ## Credits ##
 
-Many thanks to the following persons for their help:
+Many thanks to the following for their contributions:
 
 * Ivan de Jesus Deras Tabora from the Universidad Tecnológica Centroamericana in Honduras has implemented the verilog code generator and almost all the necessary verilog templates.
 * Theldo Cruz Franqueira from the Pontifícia Universidade Católica de Minas Gerais in Brazil has provided the Portuguese translation.
@@ -262,6 +261,3 @@ Many thanks to the following persons for their help:
 * Nicolas Maltais ([@maltaisn](https://github.com/maltaisn)) has provided the French translation.
 * Luca Cavallari ([@psiwray](https://github.com/psiwray)) has provided the Italian translation.
 * [Icons8](https://icons8.com/) for providing the material icons used in the remastered user interface.
-## Additional Screenshots
-
-![screnshot3](distribution/screenshot3.png)
