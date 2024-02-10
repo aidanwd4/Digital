@@ -15,7 +15,7 @@ import de.neemann.digital.core.switching.RelayDT;
 import de.neemann.digital.core.wiring.Clock;
 import de.neemann.digital.core.wiring.Splitter;
 import de.neemann.digital.draw.elements.PinException;
-import de.neemann.digital.gui.Main;
+import de.neemann.digital.gui.MainGui;
 import de.neemann.digital.lang.Lang;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -321,7 +321,7 @@ public class ModelAnalyser {
     public int calcMaxPathLen() throws PinException, BacktrackException, AnalyseException {
         LOGGER.debug("start to calculate the depth of the model...");
 
-        if (!Main.isExperimentalMode() && !modelContainsSwitches())
+        if (!MainGui.isExperimentalMode() && !modelContainsSwitches())
             CycleDetector.checkForCycles(inputs);
 
         DependencyAnalyser da = new DependencyAnalyser(this);
@@ -345,7 +345,7 @@ public class ModelAnalyser {
         for (Signal s : inputs)
             tt.addVariable(s.getName());
 
-        if (!Main.isExperimentalMode() && !modelContainsSwitches())
+        if (!MainGui.isExperimentalMode() && !modelContainsSwitches())
             CycleDetector.checkForCycles(inputs);
 
         DependencyAnalyser da = new DependencyAnalyser(this);
